@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/teal_200"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tempoVideo"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="88dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="18:00"
+        android:textColor="@color/white" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/thumbnail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@color/teal_700" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnail"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/foto"
+        android:fontFamily="sans-serif-black"
+        android:maxLength="50"
+        android:text="Minecraft: O Inicio de Gameplay "
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/visualizacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@id/foto"
+        android:text="Minecraft 56 mil visualizações - 8 meses" />
+
+</RelativeLayout>
